@@ -3,6 +3,9 @@
 
 <head>
   <title>HTML Login Form</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
+
 </head>
 
 <body>
@@ -72,6 +75,14 @@
     justify-content: center;
     align-items: center;
   }
+
+  /* Tambahkan gaya untuk gambar */
+  .refresh-icon {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    /* Atur jarak antara teks dan ikon */
+  }
   </style>
   <div class="main">
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzBSUfBxD_sQPeHij6Oyxu_6HHvOCPu_fivg&s" alt="">
@@ -82,22 +93,20 @@
       <input type="text" id="first" name="first" placeholder="Masukan Email Anda" required>
 
       <label for="password">
-        Kata Sandi:
+        Kode Verifikasi:
       </label>
-      <input type="password" id="password" name="password" placeholder="Masukan Kata Sandi Anda" required>
+      <input type="text" id="firt" name="first" placeholder="Masukan Kode Verifikasi" required>
 
       <div class="wrap">
-        <button type="submit" onclick="solve()" formaction="index.php">
-          Submit
+        <button type="submit" onclick="solve()" formaction="verifikasi-sandi.php">
+          OK
         </button>
       </div>
     </form>
-    <a href="lupa-sandi.php" style="text-decoration: none;">Lupa Kata Sandi?</a>
-    <p>Belum Punya Akun?
-      <a href="daftar-akun.php" style="text-decoration: none;">
-        Daftar Akun
-      </a>
-    </p>
+    <div>
+      <p>Kirim Ulang Kode Verifikasi <a style="text-decoration: none;" href="#"><i class="ri-restart-line"></i></a></p>
+
+    </div>
   </div>
 </body>
 

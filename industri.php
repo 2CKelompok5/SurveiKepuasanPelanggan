@@ -1,14 +1,3 @@
-<?php 
-session_start();
-require_once '../config.php';
-
-if (!isset($_SESSION['username'])) {
-    header("Location: ../login.php");
-    exit();
-}
-?>
-
-
 <!DOCTYPE html>
 <html>
 
@@ -17,7 +6,7 @@ if (!isset($_SESSION['username'])) {
 
 <body>
   <?php include("includes/header.php") ?>
-  <?php include("includes/manajemen-survey.php") ?>
+  <?php include("includes/kategori-industri.php") ?>
   <?php include("includes/footer.php") ?>
 </body>
 

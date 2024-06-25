@@ -17,7 +17,7 @@ if (!isset($_SESSION['username'])) {
 
 <body>
   <?php include("includes/header.php") ?>
-  <?php include("includes/manajemen-survey.php") ?>
+  <?php include("includes/analisis-survey.php") ?>
   <?php include("includes/footer.php") ?>
 </body>
 

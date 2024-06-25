@@ -77,6 +77,11 @@
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzBSUfBxD_sQPeHij6Oyxu_6HHvOCPu_fivg&s" alt="">
     <form action="">
       <label for="first">
+        Nama Pengguna:
+      </label>
+      <input type="text" id="first" name="first" placeholder="Masukan Nama Anda" required>
+
+      <label for="first">
         Email:
       </label>
       <input type="text" id="first" name="first" placeholder="Masukan Email Anda" required>
@@ -86,18 +91,17 @@
       </label>
       <input type="password" id="password" name="password" placeholder="Masukan Kata Sandi Anda" required>
 
+      <label for="password">
+        Ulangi Kata Sandi:
+      </label>
+      <input type="password" id="password" name="password" placeholder="Ulangi Kata Sandi Anda" required>
+
       <div class="wrap">
-        <button type="submit" onclick="solve()" formaction="index.php">
-          Submit
+        <button type="submit" onclick="solve()" formaction="login.php">
+          OK
         </button>
       </div>
     </form>
-    <a href="lupa-sandi.php" style="text-decoration: none;">Lupa Kata Sandi?</a>
-    <p>Belum Punya Akun?
-      <a href="daftar-akun.php" style="text-decoration: none;">
-        Daftar Akun
-      </a>
-    </p>
   </div>
 </body>
 
